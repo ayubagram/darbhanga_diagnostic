@@ -36,31 +36,38 @@
     </div>
     <div v-if="nav" class="small__nav primary d-sm-none" style="width: 100%;">
       <v-list nav dense expand class="primary" dark>
-        <v-list-item v-for="(nav, n) in navs" :key="n" link>
-          <v-list-item-title v-text="nav.title" style="Font-size: 16px; text-transform: uppercase !important;" class="px-3" />
-        </v-list-item>
-        <!-- <v-list-group
-          v-for="item in items"
-          :key="item.title"
-          v-model="item.active"
-          :prepend-icon="item.action"
-          no-action
-        >
-          <template v-slot:activator>
-            <v-list-item-content>
-              <v-list-item-title v-text="item.title"></v-list-item-title>
-            </v-list-item-content>
-          </template>
-
-          <v-list-item
-            v-for="child in item.items"
-            :key="child.title"
-          >
-            <v-list-item-content>
-              <v-list-item-title v-text="child.title"></v-list-item-title>
-            </v-list-item-content>
+        <div v-for="(nav, n) in navs" :key="n">
+          <v-list-group active-class="active__nav" v-if="nav.children">
+            <template v-slot:activator>
+              <v-list-item-content class="ml-3">
+                <v-list-item-title v-text="nav.title" style="Font-size: 16px; text-transform: uppercase !important;" />
+              </v-list-item-content>
+            </template>
+            <div v-for="(child, c) in nav.children" :key="c">
+              <v-list-group active-class="active__nav" v-if="child.children" class="ml-6">
+                <template v-slot:activator>
+                  <v-list-item-content class="pl-4">
+                    <v-list-item-title v-text="child.title" style="Font-size: 16px; text-transform: uppercase !important;" />
+                  </v-list-item-content>
+                </template>
+                <v-list-item v-for="(link, l) in child.children" :key="l" class="ml-6 pl-6" link>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="link.title" style="Font-size: 16px; text-transform: uppercase !important;" />
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list-group>
+              <v-list-item v-else class="ml-6 pl-6" link>
+                <v-list-item-content>
+                  <v-list-item-title v-text="child.title" style="Font-size: 16px; text-transform: uppercase !important;" />
+                </v-list-item-content>
+              </v-list-item>
+            </div>
+          </v-list-group>
+          <v-list-item v-else link>
+            <v-list-item-title v-text="nav.title" style="Font-size: 16px; text-transform: uppercase !important;" class="px-3" />
           </v-list-item>
-        </v-list-group> -->
+        </div> 
+       
       </v-list>
       <div class="mx-3 mb-3 d-flex align-center" style="grid-gap: 12px;">
         <div style="width: 100%; height: 1px;" class="white" />
@@ -147,5 +154,9 @@ ul li { position: relative; }
   left: 0;
   transition: linear 250ms;
   box-shadow: 0 3px 10px 0 rgb(255 255 255 / 20%);
+}
+.active__nav {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, .25);
 }
 </style>
