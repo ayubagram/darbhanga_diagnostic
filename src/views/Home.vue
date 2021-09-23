@@ -3,8 +3,8 @@
     <div class="home__banner">
       <div class="home__banner__content px-3 px-md-4">
         <div class="title">Welcome to Darbhanga Diagnostic Centre</div>
-        <div class="display-3 my-5" style="font-weight: 500 !important;">Most Trusted and <br> Reliable Diagnostic</div>
-        <div style="font-size: 22px;" class="mb-3">Services Provider in Pakistan</div>
+        <div class="display-2 my-5" style="font-weight: 500 !important;">Most Trusted and <br> Reliable Diagnostic</div>
+        <div style="font-size: 22px;" class="mb-3">Services Provider in India</div>
         <v-btn max-width="200" color="error" large>contact us</v-btn>
       </div>
     </div>

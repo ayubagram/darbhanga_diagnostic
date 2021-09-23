@@ -7,6 +7,19 @@ import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
+Vue.mixin({
+  computed: {
+    navHeight () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 70
+        case 'sm': return 110
+        case 'md': return 110
+        default: return 110
+      }
+    },
+  }
+})
+
 new Vue({
   router,
   store,

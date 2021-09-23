@@ -42,11 +42,11 @@ export default {
     about: ['Book an Appointment','DD Discount Card'],
     links: ['Who we are', 'Home Sample Collection', 'Why DD', 'Quality policy', 'Certifications & Associations', 'Contact Us'],
     contacts: [
-      { icon: 'mdi-map-marker', value: '13-A, Kohistan Road, F-8 Markaz, Islamabad' },
-      { icon: 'mdi-phone', value: 'Phone : +92 51 2251212, 03 111 000 432' },
-      { icon: 'mdi-phone', value: 'UAN: 051-111-000-432' },
-      { icon: 'mdi-email', value: 'Email : info@idc.net.pk' },
-      { icon: 'mdi-hospital-building', value: 'Fax : +92 51 228 1313' }
+      { icon: 'mdi-map-marker', value: 'Panitanki-10, Birgunj, Nepal' },
+      { icon: 'mdi-phone', value: '+977 051254545, +977 051284694' },
+      { icon: 'mdi-phone', value: '051-111-000-432' },
+      { icon: 'mdi-email', value: 'info@darbhangadianostic.com' },
+      { icon: 'mdi-hospital-building', value: '+977 51 228 1313' }
     ]
   })
 }
