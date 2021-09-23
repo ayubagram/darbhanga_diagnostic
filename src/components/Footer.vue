@@ -2,7 +2,7 @@
   <v-footer padless color="primary">
     <div class="px-3 px-md-4 footer white--text py-6 py-sm-8 py-md-10 py-lg-12">
       <div class="footer__logo">
-        <img src="https://idc.net.pk/wp-content/uploads/2021/06/idc-logo.png" alt="Darbhanga Diagnostice">
+        <div class="display-3">DDC</div>
         <div class="d-flex mt-3" style="grid-gap: 6px;">
           <v-btn tile text icon v-for="(social, s) in socials" :key="s" color="white" target="_blank" :href="social.href">
             <v-icon v-text="social.icon"  />

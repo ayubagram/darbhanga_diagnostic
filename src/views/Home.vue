@@ -3,7 +3,7 @@
     <div class="home__banner">
       <div class="home__banner__content px-3 px-md-4">
         <div class="title">Welcome to Darbhanga Diagnostic Centre</div>
-        <div class="display-2 my-5" style="font-weight: 500 !important;">Most Trusted and <br> Reliable Diagnostic</div>
+        <div class="text-h4 text-sm-h3 text-md-h2 text-lg-h1 my-5" style="font-weight: 500 !important;">Most Trusted and <br> Reliable Diagnostic</div>
         <div style="font-size: 22px;" class="mb-3">Services Provider in India</div>
         <v-btn max-width="200" color="error" large>contact us</v-btn>
       </div>
@@ -38,7 +38,7 @@
     <!-- Covid test -->
     <div class="covid">
       <div class="covid__info px-3 px-md-4">
-        <div class="display-3 font-weight-bold">COVID-19</div>
+        <div class="text-h4 text-sm-h3 text-md-h2 font-weight-bold">COVID-19</div>
         <div style="font-size: 20px; letter-spacing: .5px;" class="my-5">24/7 Covid- 19 Testing Available | UAN: 051 111 000 432 - 03 111 000 432</div>
         <v-btn max-width="200" color="error" elevation="0" large>covid-19 testing</v-btn>
       </div>
@@ -47,7 +47,7 @@
      <!-- health screening -->
     <div class="white py-8 py-sm-10 py-md-12 py-lg-14 px-3 px-md-4 text-center">
       <v-icon v-text="'mdi-heart-pulse'" color="black" size="80" />
-      <div class="display-1 mt-3 mb-10">CORPORATE HEALTH SCREENING</div>
+      <div class="text-h4 text-sm-h3 text-md-h2 mt-3 mb-10">CORPORATE HEALTH SCREENING</div>
       <div class="tests">
         <div class="tests__div primary--text" v-for="(test, t) in screning" :key="t">
           <v-icon v-text="test.icon" color="primary" size="80" />
@@ -64,7 +64,7 @@
     <!-- Covid test -->
     <div class="covid sample">
       <div class="covid__info px-3 px-md-4">
-        <div class="display-3 font-weight-bold mb-3">Home Sample <br> Collection At Your <br> Doorstep</div>
+        <div class="text-h4 text-sm-h3 text-md-h2 font-weight-bold mb-3">Home Sample <br> Collection At Your <br> Doorstep</div>
         <p>If you are looking for the best medical laboratory then IDC is always there. Get laboratory tests done easily with our Home Sample Collection.</p>
         <v-btn class="mt-3" max-width="250" large color="error" elevation="0">HOME SAMPLE COLLECTION</v-btn>
       </div>
