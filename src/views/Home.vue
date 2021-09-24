@@ -87,7 +87,7 @@ export default {
       { icon: 'mdi-chandelier', value: '+3 MN', title: 'Tests per annum' },
       { icon: 'mdi-account-group', value: '+1.5k', title: 'Employees' },
       { icon: 'mdi-certificate', value: '+250', title: 'Qualified Doctors' },
-      { icon: 'mdi-hospital-building', value: '+25', title: 'Cities of India' },
+      { icon: 'mdi-hospital-building', value: '+25', title: 'Cities of Nepal' },
       { icon: 'mdi-account', value: 'Largest', title: 'Corona Testing Facility' }
     ],
     screning: [
